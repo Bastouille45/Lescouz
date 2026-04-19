@@ -37,7 +37,10 @@ body {
 
 </body>
 <body>
-<button>
-    Clique ya quoi
-</button>
+<button onclick="changertexte()">changer le texte</button>
+    <script>
+        function changertexte() {
+            document.getElementById("texte").innerHTML = "Tu as Cliqué !";
+        }
+    </script>
 </body>
