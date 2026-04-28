@@ -33,17 +33,17 @@ body {
      <img src="https://th.bing.com/th/id/OIP.9qPBCx29CVBrbs2tq30-awAAAA?w=113&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="L'IMAGE MARCHE PASSS!!">
 </body>
 <body>
-    <img src="https://cache.cosmopolitan.fr/data/photo/w680_h680_ci/6r/pierre-niney.jpg" alt="Image 3">
-
+    <img src="https://cache.cosmopolitan.fr/data/photo/w680_h680_ci/6r/pierre-niney.jpg" alt="Image 3"> 
+    
 </body>
-<body>
-    <p id="text">Texte de base</p>
+<body> 
+    <p id="text">Texte de base</p> 
 <button onclick="changertexte()">changer le texte</button>
-    <script>
+    <script> // function = action sur une variable comme "changertexte()"
         function changertexte() {
-            document.getElementById("text").innerHTML = "Tu as Cliqué !";
-            wait 5 
-            document.getelementbyid("text").innerHTML = "Texte de base";
-        }
+            document.getElementById("text").innerHTML = "Tu as Cliqué !"; // fait apparaitre le nouveau texte quand on clique
+            setTimeout(function() {
+            document.getElementById("text").innerHTML = "Texte de base"; // reset le texte
+        }, 5000); // 5 secondes
     </script>
 </body>
